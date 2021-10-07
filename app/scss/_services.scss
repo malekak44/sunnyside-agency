@@ -1,22 +1,14 @@
 .service__container {
-    &:last-child {
-        height: 1160px;
-
-        @include breakpoint-up(large) {
-            height: 561px;
-        }
-    }
-
     .service {
-        height: 740px;
         display: flex;
+        height: 46.25rem;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
 
         @include breakpoint-up(large) {
+            height: 35rem;
             flex-direction: row;
-            height: 561px;
         }
 
         &:first-child {
@@ -67,23 +59,23 @@
 
             &__wrapper {
                 width: auto;
-                text-align: center;
                 padding: 0 2rem;
+                text-align: center;
 
                 @include breakpoint-up(large) {
                     width: 77%;
-                    text-align: left;
                     padding: 0;
+                    text-align: left;
                 }
 
                 h1 {
-                    font-size: 31.5px;
                     width: auto;
-                    color: $verydarkdesaturatedblue;
                     font-weight: 900;
-                    margin: 0 0 28px;
+                    font-size: 31.5px;
                     line-height: 1.25;
+                    margin: 0 0 1.75rem;
                     text-shadow: 0 0 1px;
+                    color: $verydarkdesaturatedblue;
 
                     @include breakpoint-up(large) {
                         width: 26rem;
@@ -92,50 +84,50 @@
                 }
 
                 p {
-                    font-size: 18px;
+                    margin: 0;
+                    width: auto;
                     line-height: 1.6;
                     font-weight: 500;
-                    margin: 0;
-                    color: $darkgrayishblue;
-                    width: auto;
+                    font-size: 1.125rem;
                     letter-spacing: -0.3px;
+                    color: $darkgrayishblue;
 
                     @include breakpoint-up(large) {
-                        width: 412px;
+                        width: 25.75rem;
                         letter-spacing: -0.6px;
                     }
                 }
 
                 .service__btn {
-                    cursor: pointer;
-                    text-transform: uppercase;
                     border: none;
                     outline: none;
-                    background: none;
-                    font-family: $fraunces;
-                    text-shadow: 0 0 1px;
-                    color: $verydarkdesaturatedblue;
-                    letter-spacing: 1px;
-                    position: relative;
-                    transition: background 0.5s ease-in-out;
+                    cursor: pointer;
                     margin-top: 2rem;
+                    background: none;
                     font-size: 15.5px;
+                    position: relative;
+                    letter-spacing: 1px;
+                    text-shadow: 0 0 1px;
+                    font-family: $fraunces;
+                    text-transform: uppercase;
+                    color: $verydarkdesaturatedblue;
+                    transition: background 0.5s ease-in-out;
 
                     @include breakpoint-up(large) {
-                        margin-top: 2.45rem;
                         font-size: 14.5px;
+                        margin-top: 2.45rem;
                     }
 
                     &::after {
                         display: inline-block;
                         content: "";
-                        width: 12.5ch;
+                        left: 0;
+                        z-index: -1;
                         height: 10px;
+                        bottom: -2px;
+                        width: 12.5ch;
                         position: absolute;
                         border-radius: 5px;
-                        left: 0;
-                        bottom: -2px;
-                        z-index: -1;
                     }
                 }
             }
@@ -144,6 +136,10 @@
         &__img {
             flex: 1;
             order: -1;
+
+            @include breakpoint-up(large) {
+                order: 0;
+            }
 
             img {
                 width: 100%;
@@ -171,37 +167,60 @@
         &__img-with-text {
             height: 100%;
             width: 100%;
-            background-size: 100%;
-            background-repeat: no-repeat;
             display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            text-align: center;
             margin-top: 0;
+            text-align: center;
+            align-items: flex-end;
+            background-size: 100%;
+            justify-content: center;
+            background-repeat: no-repeat;
 
             @include breakpoint-up(large) {
                 margin-top: -5px;
             }
 
             .text__wrapper {
-                width: 20rem;
-                height: 12rem;
+                width: auto;
+                height: 13.8rem;
+                padding: 0 1.6rem;
+
+                @include breakpoint-up(large) {
+                    padding: 0;
+                    width: 20rem;
+                    height: 12rem;
+                }
 
                 h2 {
-                    margin-top: 4px;
-                    font-size: 26px;
                     font-weight: 900;
+                    font-size: 1.75rem;
+                    margin-top: 1.25rem;
+
+                    @include breakpoint-up(large) {
+                        font-size: 1.625rem;
+                        margin-top: 0.25rem;
+                    }
                 }
 
                 p {
-                    margin-top: 26px;
+                    font-size: 1rem;
                     line-height: 1.7;
-                    font-size: 15px;
                     font-weight: 600;
+                    margin-top: 1.5rem;
 
+                    @include breakpoint-up(large) {
+                        font-size: 0.9375rem;
+                        margin-top: 1.625rem;
+                    }
                 }
             }
         }
     }
 
+    .big-service {
+        height: 72.5rem;
+
+        @include breakpoint-up(large) {
+            height: 35rem;
+        }
+    }
 }
