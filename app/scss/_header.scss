@@ -2,14 +2,14 @@
     z-index: 1;
     position: relative;
     height: 33.2rem;
-    background-image: url("../../images/mobile/image-header.jpg");
+    background-image: url("../images/mobile/image-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     @include breakpoint-up(large) {
         height: 47rem;
-        background-image: url("../../images/desktop/image-header.jpg");
+        background-image: url("../images/desktop/image-header.jpg");
     }
 
     &.open {
