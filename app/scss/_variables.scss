@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Fraunces:wght@700;900&display=swap');
 
 //Colors
 $white: hsl(0, 0%, 100%);
-$softred: hsl(7, 99%, 70%);
+$red: hsl(7, 99%, 70%);
+$softred: hsla(7, 99%, 70%, 0.5);
 $yellow: hsl(51, 100%, 49%);
+$soft-yellow: hsla(51, 100%, 49%, 0.5);
 $darkblue: hsl(198, 62%, 26%);
 $grayishblue: hsl(210, 4%, 67%);
 $darkgrayishblue: hsl(232, 10%, 55%);
