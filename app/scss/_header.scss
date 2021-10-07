@@ -1,0 +1,145 @@
+.header {
+    z-index: 1;
+    position: relative;
+
+    &.open {
+        .header__toggle {
+            >span {
+                background: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding: 2rem 1.5rem;
+        justify-content: space-between;
+        background-color: deepskyblue;
+
+        @include breakpoint-up(large) {
+            padding: 2rem 2.375rem;
+        }
+    }
+
+    &__logo {
+
+        img {
+            height: auto;
+            margin-top: 0;
+            width: 7.75rem;
+
+            @include breakpoint-up(large) {
+                width: 9.9375rem;
+                height: 1.9375rem;
+                margin-top: 0.375rem;
+            }
+        }
+
+    }
+
+    &__toggle {
+        margin-top: -0.25rem;
+
+        >span {
+            height: 2px;
+            width: 1.5rem;
+            display: block;
+            background-color: $white;
+            transition: all 300ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-bottom: 0.375rem;
+            }
+        }
+    }
+
+    &__menu {
+        left: 50%;
+        display: flex;
+        margin-top: 1rem;
+        position: absolute;
+        background: $white;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: calc(100% - 3rem);
+        transform: translateX(-50%);
+        padding: 2.5rem 1.625rem 2.4rem;
+
+        @include breakpoint-up(large) {
+            display: none;
+        }
+
+        a {
+            font-size: 19.5px;
+            font-weight: bold;
+            text-align: center;
+            color: $darkgrayishblue;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .header__btn {
+            height: 3.5rem;
+            width: 8.75rem;
+            margin-left: 5px;
+            background: $yellow;
+            font-size: 1rem !important;
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            left: 92%;
+            bottom: 100%;
+            margin-left: 2.18px;
+            border-width: 12px;
+            border-style: solid;
+            border-color: transparent $white $white transparent;
+        }
+    }
+
+    &__links {
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+
+        a {
+            color: $white;
+            position: relative;
+            font-size: 1.0625rem;
+
+            &:first-child {
+                margin-right: 1px;
+            }
+
+            &:not(:first-child) {
+                margin-left: 2.8125rem;
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        height: 3.25rem;
+        width: 8.1875rem;
+        background: $white;
+        align-items: center;
+        border-radius: 30px;
+        font-family: $fraunces;
+        letter-spacing: -0.7px;
+        margin-right: 0.4375rem;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 0.9375rem !important;
+        color: $verydarkdesaturatedblue !important;
+    }
+}
