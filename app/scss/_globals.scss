@@ -25,6 +25,12 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+    font-family: $fraunces;
+}
+
 // Visibility
 .hide-for-mobile {
     @include breakpoint-down(medium) {
