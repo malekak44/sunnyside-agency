@@ -1,0 +1,102 @@
+.testimonial {
+    &__container {
+        width: 78%;
+        margin: auto;
+        text-align: center;
+        padding: 4rem 0 2rem;
+
+        @include breakpoint-up(large) {
+            padding: 8rem 0 9rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            letter-spacing: 3px;
+            font-size: 1.0625rem;
+            color: $darkgrayishblue;
+            text-transform: uppercase;
+
+            @include breakpoint-up(large) {
+                font-size: 1.125rem;
+                margin-top: 1.25rem;
+                letter-spacing: 0.375rem;
+            }
+        }
+    }
+
+    &__cards__wrapper {
+        display: flex;
+        margin-top: 3.7rem;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include breakpoint-up(large) {
+            margin-top: 4.5rem;
+            flex-direction: row;
+        }
+    }
+
+    &__card {
+        width: 20.5rem;
+        margin-bottom: 4rem;
+
+        @include breakpoint-up(large) {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 4.5rem;
+            border-radius: 50%;
+
+            @include breakpoint-up(large) {
+                width: 4.25rem;
+            }
+
+            +p {
+                margin: 1.5rem 0;
+                font-weight: 500;
+                line-height: 1.8;
+                font-size: 1.125rem;
+                text-shadow: 0 0 1px;
+                color: $verydarkgrayishblue;
+
+                @include breakpoint-up(large) {
+                    margin: 3rem 0;
+                    font-size: 1.0625rem;
+                }
+            }
+        }
+
+        .user__info {
+            margin-top: 2rem;
+
+            @include breakpoint-up(large) {
+                margin-top: 4.3rem;
+            }
+
+            h4 {
+                margin: 0;
+                font-weight: 900;
+                font-size: 1.125rem;
+                font-family: $fraunces;
+                color: $verydarkdesaturatedblue;
+
+                @include breakpoint-up(large) {
+                    font-size: 1.0625rem;
+                }
+            }
+
+            p {
+                color: $grayishblue;
+                margin: 0.75rem 0 0;
+                font-size: 0.875rem;
+                text-shadow: 0 0 1px;
+
+                @include breakpoint-up(large) {
+                    font-size: 0.8125rem;
+                }
+            }
+        }
+    }
+}

@@ -195,7 +195,7 @@ h3 {
   position: absolute;
   left: 92%;
   bottom: 100%;
-  margin-left: 2.18px;
+  margin-left: 1px;
   border-width: 12px;
   border-style: solid;
   border-color: transparent white white transparent;
@@ -520,12 +520,131 @@ h3 {
 }
 
 .service__container .big-service {
-  height: 72.5rem;
+  height: 66rem;
 }
 
 @media (min-width: 64em) {
   .service__container .big-service {
     height: 35rem;
+  }
+}
+
+.testimonial__container {
+  width: 78%;
+  margin: auto;
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+
+@media (min-width: 64em) {
+  .testimonial__container {
+    padding: 8rem 0 9rem;
+  }
+}
+
+.testimonial__container h2 {
+  margin-top: 0;
+  letter-spacing: 3px;
+  font-size: 1.0625rem;
+  color: #818498;
+  text-transform: uppercase;
+}
+
+@media (min-width: 64em) {
+  .testimonial__container h2 {
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
+    letter-spacing: 0.375rem;
+  }
+}
+
+.testimonial__cards__wrapper {
+  display: flex;
+  margin-top: 3.7rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 64em) {
+  .testimonial__cards__wrapper {
+    margin-top: 4.5rem;
+    flex-direction: row;
+  }
+}
+
+.testimonial__card {
+  width: 20.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 64em) {
+  .testimonial__card {
+    margin-bottom: 0;
+  }
+}
+
+.testimonial__card img {
+  width: 4.5rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 64em) {
+  .testimonial__card img {
+    width: 4.25rem;
+  }
+}
+
+.testimonial__card img + p {
+  margin: 1.5rem 0;
+  font-weight: 500;
+  line-height: 1.8;
+  font-size: 1.125rem;
+  text-shadow: 0 0 1px;
+  color: #5a636c;
+}
+
+@media (min-width: 64em) {
+  .testimonial__card img + p {
+    margin: 3rem 0;
+    font-size: 1.0625rem;
+  }
+}
+
+.testimonial__card .user__info {
+  margin-top: 2rem;
+}
+
+@media (min-width: 64em) {
+  .testimonial__card .user__info {
+    margin-top: 4.3rem;
+  }
+}
+
+.testimonial__card .user__info h4 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 1.125rem;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+}
+
+@media (min-width: 64em) {
+  .testimonial__card .user__info h4 {
+    font-size: 1.0625rem;
+  }
+}
+
+.testimonial__card .user__info p {
+  color: #a7abae;
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  text-shadow: 0 0 1px;
+}
+
+@media (min-width: 64em) {
+  .testimonial__card .user__info p {
+    font-size: 0.8125rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
