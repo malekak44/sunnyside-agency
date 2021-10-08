@@ -1,13 +1,13 @@
 .service__container {
     .service {
         display: flex;
-        height: 46.25rem;
+        margin-bottom: 0;
         align-items: center;
         flex-direction: column;
         justify-content: center;
 
         @include breakpoint-up(large) {
-            height: 35rem;
+            margin-bottom: -4px;
             flex-direction: row;
         }
 
@@ -59,7 +59,7 @@
 
             &__wrapper {
                 width: auto;
-                padding: 0 2rem;
+                padding: 4rem 2rem;
                 text-align: center;
 
                 @include breakpoint-up(large) {
@@ -168,16 +168,11 @@
             height: 100%;
             width: 100%;
             display: flex;
-            margin-top: 0;
             text-align: center;
             align-items: flex-end;
             background-size: 100%;
             justify-content: center;
             background-repeat: no-repeat;
-
-            @include breakpoint-up(large) {
-                margin-top: -5px;
-            }
 
             .text__wrapper {
                 width: auto;

@@ -1,0 +1,76 @@
+.footer {
+    text-align: center;
+    background: #90D4C6;
+    padding: 4rem 0 4.5rem;
+
+    @include breakpoint-up(large) {
+        padding: 4rem 0 3.7rem;
+    }
+
+    img {
+        width: 10.75rem;
+
+        @include breakpoint-up(large) {
+            width: 10rem;
+        }
+    }
+
+    &__links {
+        width: auto;
+        display: flex;
+        padding: 0 2.5rem;
+        align-items: center;
+        margin: 2.2rem auto 5rem;
+        justify-content: space-between;
+
+        @include breakpoint-up(large) {
+            padding: 0;
+            width: 17rem;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 1.0625rem;
+            color: $darkmoderatecyan;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: $white;
+            }
+
+            @include breakpoint-up(large) {
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__social {
+        svg {
+            width: 1.375rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            @include breakpoint-up(large) {
+                width: 1.3125rem;
+            }
+
+            &:not(:last-child) {
+                margin-right: 1.4rem;
+
+                @include breakpoint-up(large) {
+                    margin-right: 1.3rem;
+                }
+            }
+
+            path {
+                fill: #2C7566;
+            }
+
+            &:hover {
+                path {
+                    fill: $white;
+                }
+            }
+        }
+    }
+}
